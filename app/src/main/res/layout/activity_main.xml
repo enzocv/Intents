@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.upt.intents.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_call"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:text="@string/custom_call"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_location"
+        android:layout_below="@+id/btn_call"
+        android:drawableRight="@android:drawable/ic_dialog_map"
+        android:text="@string/custom_location"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_web"
+        android:text="@string/custom_web"
+        android:layout_below="@+id/btn_web"
+        android:drawableLeft="@android:drawable/ic_dialog_alert"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_camara"
+        android:text="Capturar Imagen"
+        android:layout_below="@+id/btn_web"
+        android:drawableLeft="@android:drawable/ic_menu_camera"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_prev"
+        android:layout_below="@+id/btn_camara"/>
+
+
+</LinearLayout>
